@@ -1,0 +1,266 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+
+
+background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+    url("https://gcdnb.pbrd.co/images/L914qjxin8GW.jpg");
+
+    background-size:cover;
+
+    font-family:"Special Elite", monospace;
+
+
+color:#c2c2c2;
+
+}
+
+
+.search {font-family: "Special Elite";}
+.page{
+
+width:1200px;
+
+margin:auto;
+
+background:rgba(0,0,0,.35);
+
+min-height:100vh;
+
+}
+
+/* HEADER */
+
+header{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:18px 30px;
+
+background:#090909;
+
+border-bottom:2px solid #c40000;
+
+}
+
+.logo{
+
+font-size:30px;
+
+color:#ff0000;
+
+}
+
+.marquee{
+
+flex:1;
+
+overflow:hidden;
+
+margin:0 30px;
+
+white-space:nowrap;
+
+}
+
+.track{
+
+display:inline-block;
+
+padding-left:100%;
+
+animation:marquee 18s linear infinite;
+
+color:#ff3333;
+
+letter-spacing:4px;
+
+}
+
+@keyframes marquee{
+
+from{transform:translateX(0);}
+to{transform:translateX(-100%);}
+
+}
+
+input{
+
+background:#050505;
+
+border:1px solid red;
+
+padding:8px 12px;
+
+color:white;
+
+}
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+
+padding:70px 0 50px;
+
+}
+
+.hero h1{
+
+font-family:"New Rocker";
+
+font-size:72px;
+
+color:#e10000;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+color:#aaaaaa;
+
+font-size:18px;
+
+}
+
+/* GRID */
+
+.genre-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+padding:40px;
+
+}
+
+/* CARD */
+
+.card{
+
+background:#060606;
+
+border:2px solid #a80000;
+
+padding:20px;
+
+text-decoration:none;
+
+color:#cfcfcf;
+
+transition:.35s;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ff2b2b;
+
+box-shadow:0 0 18px rgba(255,0,0,.45);
+
+}
+
+.card img{
+
+width:100%;
+
+height:170px;
+
+object-fit:cover;
+
+border:1px solid red;
+
+margin-bottom:18px;
+
+}
+
+.card h2{
+
+font-family:"New Rocker";
+
+font-size:28px;
+
+color:#ff1a1a;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+flex:1;
+
+margin-bottom:20px;
+
+}
+
+.card span{
+
+display:inline-block;
+
+border-top:1px solid #660000;
+
+padding-top:12px;
+
+color:#ff4444;
+
+font-weight:bold;
+
+}
+
+@media(max-width:1000px){
+
+.page{
+
+width:95%;
+
+}
+
+.genre-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.genre-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+}

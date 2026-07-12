@@ -1,0 +1,283 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:
+linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.729)),
+url("https://gcdnb.pbrd.co/images/L914qjxin8GW.jpg");
+
+background-size:cover;
+
+font-family:"Special Elite";
+
+color:#bcbcbc;
+
+}
+
+.page{
+
+width:1200px;
+
+margin:auto;
+
+background:rgba(0, 0, 0, 0.597);
+
+min-height:100vh;
+
+}
+
+/* HEADER */
+
+header{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:15px 30px;
+
+background:#090909;
+
+border-bottom:2px solid red;
+
+}
+
+.logo{
+
+font-size:32px;
+
+color:red;
+
+}
+
+.marquee{
+
+overflow:hidden;
+
+flex:1;
+
+margin:0 40px;
+
+white-space:nowrap;
+
+}
+
+.track{
+
+display:inline-block;
+
+padding-left:100%;
+
+animation:scroll 18s linear infinite;
+
+color:#ff3030;
+
+letter-spacing:5px;
+
+}
+
+@keyframes scroll{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(-100%);
+
+}
+
+}
+
+input{
+
+background:black;
+
+border:1px solid red;
+
+padding:8px;
+
+color:white;
+
+}
+
+/* TITLE */
+
+h1{
+
+font-family:"New Rocker";
+
+font-size:80px;
+
+text-align:center;
+
+color:#e00000;
+
+margin-top:70px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+margin:20px;
+
+color:#ff5555;
+
+}
+
+.breadcrumb{
+
+margin:50px;
+
+color:#888;
+
+}
+
+.breadcrumb a{
+
+color:#c33;
+
+text-decoration:none;
+
+}
+
+/* ARTICLE */
+
+.article{
+
+display:grid;
+
+grid-template-columns:3fr 1fr;
+
+gap:40px;
+
+margin:50px;
+
+}
+
+.content{
+
+line-height:2;
+
+}
+
+.content h2{
+
+font-family:"New Rocker";
+
+color:red;
+
+font-size:36px;
+
+margin:40px 0 20px;
+
+border-bottom:1px solid red;
+
+padding-bottom:10px;
+
+}
+
+.left{
+
+width:250px;
+
+float:left;
+
+margin:0 25px 20px 0;
+
+border:2px solid red;
+
+}
+
+.infobox{
+
+border:2px solid red;
+
+padding:20px;
+
+background:#050505;
+
+height:fit-content;
+
+position:sticky;
+
+top:20px;
+
+}
+
+.infobox img{
+
+width:100%;
+
+border:1px solid red;
+
+margin-bottom:20px;
+
+}
+
+.infobox h3{
+
+font-family:"New Rocker";
+
+text-align:center;
+
+color:red;
+
+margin-bottom:20px;
+
+}
+
+.infobox table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.infobox td{
+
+padding:10px;
+
+border-bottom:1px solid #400;
+
+}
+
+.gallery{
+
+display:flex;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.gallery img{
+
+width:180px;
+
+border:2px solid red;
+
+transition:.3s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+border-color:white;
+
+}
